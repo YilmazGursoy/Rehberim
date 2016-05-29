@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="KGk-i7-Jjw" customClass="CategoriesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69D-8x-IZX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkF-hF-RF2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uWX-cT-Q7g">
+                                        <rect key="frame" x="0.0" y="-30" width="320" height="191"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="categoryMask" translatesAutoresizingMaskIntoConstraints="NO" id="Eya-RF-Mxm">
+                                        <rect key="frame" x="0.0" y="91" width="320" height="40"/>
+                                    </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MJJ-Fk-MPS">
+                                        <rect key="frame" x="150" y="55" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hH-AJ-gc7">
+                                        <rect key="frame" x="8" y="100" width="304" height="21"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Eya-RF-Mxm" secondAttribute="bottom" constant="-1" id="2rx-iC-0PQ"/>
+                                    <constraint firstItem="Eya-RF-Mxm" firstAttribute="centerX" secondItem="5hH-AJ-gc7" secondAttribute="centerX" id="8IL-bK-HPu"/>
+                                    <constraint firstItem="uWX-cT-Q7g" firstAttribute="top" secondItem="tkF-hF-RF2" secondAttribute="top" constant="-30" id="Ff4-Wn-8pI"/>
+                                    <constraint firstItem="Eya-RF-Mxm" firstAttribute="centerY" secondItem="5hH-AJ-gc7" secondAttribute="centerY" id="KMT-hi-xXj"/>
+                                    <constraint firstItem="MJJ-Fk-MPS" firstAttribute="centerY" secondItem="uWX-cT-Q7g" secondAttribute="centerY" id="Ohe-8Z-4Hn"/>
+                                    <constraint firstItem="uWX-cT-Q7g" firstAttribute="centerY" secondItem="tkF-hF-RF2" secondAttribute="centerY" id="Zjj-3N-aMC"/>
+                                    <constraint firstItem="5hH-AJ-gc7" firstAttribute="leading" secondItem="tkF-hF-RF2" secondAttribute="leadingMargin" id="adI-K1-QkB"/>
+                                    <constraint firstItem="Eya-RF-Mxm" firstAttribute="top" secondItem="tkF-hF-RF2" secondAttribute="top" constant="91" id="bZy-Vu-REK"/>
+                                    <constraint firstItem="uWX-cT-Q7g" firstAttribute="leading" secondItem="Eya-RF-Mxm" secondAttribute="leading" id="bp4-CX-QoA"/>
+                                    <constraint firstItem="uWX-cT-Q7g" firstAttribute="trailing" secondItem="Eya-RF-Mxm" secondAttribute="trailing" id="cGt-Tl-uzr"/>
+                                    <constraint firstItem="MJJ-Fk-MPS" firstAttribute="centerX" secondItem="5hH-AJ-gc7" secondAttribute="centerX" id="dZG-Lb-qid"/>
+                                    <constraint firstAttribute="bottom" secondItem="5hH-AJ-gc7" secondAttribute="bottom" constant="9" id="e3D-IM-hN0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eya-RF-Mxm" secondAttribute="trailing" id="gme-7M-sns"/>
+                                    <constraint firstItem="Eya-RF-Mxm" firstAttribute="leading" secondItem="tkF-hF-RF2" secondAttribute="leading" id="wy7-OE-lb1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tkF-hF-RF2" secondAttribute="bottom" id="DZ4-I4-trk"/>
+                            <constraint firstItem="tkF-hF-RF2" firstAttribute="top" secondItem="69D-8x-IZX" secondAttribute="top" id="W3g-fp-Tig"/>
+                            <constraint firstItem="tkF-hF-RF2" firstAttribute="leading" secondItem="69D-8x-IZX" secondAttribute="leading" id="ZbS-YO-S9o"/>
+                            <constraint firstAttribute="trailing" secondItem="tkF-hF-RF2" secondAttribute="trailing" id="vey-EN-jXi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="69D-8x-IZX" secondAttribute="bottom" id="0MQ-7e-aQt"/>
+                    <constraint firstItem="69D-8x-IZX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hwA-UD-HSF"/>
+                    <constraint firstItem="69D-8x-IZX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="igj-Fj-ZGd"/>
+                    <constraint firstAttribute="trailing" secondItem="69D-8x-IZX" secondAttribute="trailing" id="raS-xX-UnT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="categoryImageView" destination="uWX-cT-Q7g" id="Lkn-EJ-07d"/>
+                <outlet property="categoryNameLabel" destination="5hH-AJ-gc7" id="NCg-AK-TRM"/>
+                <outlet property="indicatorView" destination="MJJ-Fk-MPS" id="zp6-tv-fYz"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="55.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="categoryMask" width="168" height="120"/>
+    </resources>
+</document>

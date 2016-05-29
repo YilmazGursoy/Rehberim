@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fSe-Of-vJY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--SplashViewController-->
+        <scene sceneID="CPo-9A-YB1">
+            <objects>
+                <viewController title="SplashViewController" id="0Am-eh-Gro" customClass="SplashViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Grf-RU-xEO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vh9-pP-0kd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nlr-nb-33e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="1Lz-Vw-yz0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="3fD-Wg-hQn">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Lz-Vw-yz0" firstAttribute="centerY" secondItem="3fD-Wg-hQn" secondAttribute="centerY" id="1E9-u9-vbf"/>
+                            <constraint firstItem="1Lz-Vw-yz0" firstAttribute="top" secondItem="Nlr-nb-33e" secondAttribute="top" id="JkN-Us-KXv"/>
+                            <constraint firstAttribute="trailing" secondItem="1Lz-Vw-yz0" secondAttribute="trailing" id="PwO-p4-nud"/>
+                            <constraint firstItem="1Lz-Vw-yz0" firstAttribute="bottom" secondItem="Vh9-pP-0kd" secondAttribute="top" id="Ykr-oh-uTt"/>
+                            <constraint firstItem="1Lz-Vw-yz0" firstAttribute="centerX" secondItem="3fD-Wg-hQn" secondAttribute="centerX" id="ZPz-PO-bbu"/>
+                            <constraint firstItem="1Lz-Vw-yz0" firstAttribute="leading" secondItem="Nlr-nb-33e" secondAttribute="leading" id="vn7-0t-n28"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1Lz-Vw-yz0"/>
+                                <exclude reference="3fD-Wg-hQn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1E9-u9-vbf"/>
+                                <exclude reference="JkN-Us-KXv"/>
+                                <exclude reference="PwO-p4-nud"/>
+                                <exclude reference="Ykr-oh-uTt"/>
+                                <exclude reference="ZPz-PO-bbu"/>
+                                <exclude reference="vn7-0t-n28"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1Lz-Vw-yz0"/>
+                                <include reference="3fD-Wg-hQn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1E9-u9-vbf"/>
+                                <include reference="JkN-Us-KXv"/>
+                                <include reference="PwO-p4-nud"/>
+                                <include reference="Ykr-oh-uTt"/>
+                                <include reference="ZPz-PO-bbu"/>
+                                <include reference="vn7-0t-n28"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="9a2-lT-xrX"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="indicatorView" destination="3fD-Wg-hQn" id="dgT-x9-Pce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCD-hO-N7Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1327.5" y="371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gsW-aC-cf7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fSe-Of-vJY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dDl-vX-WIO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Am-eh-Gro" kind="relationship" relationship="rootViewController" id="OyN-MF-cRM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61h-9b-Lnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562.5" y="371"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen" width="375" height="667"/>
+    </resources>
+</document>
